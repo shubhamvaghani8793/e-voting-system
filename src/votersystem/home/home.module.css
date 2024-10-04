@@ -1,0 +1,219 @@
+.logo{
+  width: 70px;
+}
+
+.logo img{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.TypeAnimation{
+  color : rgb(85, 85, 232);
+  font-weight: 700;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  background-color: rgb(85, 85, 232);
+}
+
+.items{
+  display: flex;
+  gap: 18px;
+  font-size: 19px;
+  margin-right: 42px;
+  align-items: center;
+}
+
+.a{
+  color : white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.items p:hover{
+  border-bottom: 2px solid white ;
+  padding-bottom: 1px;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.textcontent{
+  max-width: 500px;
+  line-height: 58px;
+}
+
+.textcontent p{
+  margin-top: 30px;
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.textcontent h1{
+  font-size: 58px;
+  color: rgb(85, 85, 232);
+}
+
+.textcontent h2{
+  font-size: 48px;
+}
+
+.heroSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 1290px;
+  padding-inline: 26px;
+}
+
+.rightImage{
+  max-width: 550px;
+}
+
+.rightImage img{
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+  border-radius: 8px;
+}
+
+.btns{
+  display: flex;
+  gap: 18px;
+  margin-top: 42px;
+}
+
+.loginbtn{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(85, 85, 232);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  width: 70px;
+  border: 1px solid white;
+  outline: none;
+  font-size: 18px;
+  width: 110px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.loginbtn:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+} 
+
+.loginbtn:active{
+  transform: scale(0.8);
+}
+
+.signupbtn{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(85, 85, 232);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 110px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.signupbtn:hover{
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+} 
+
+.signupbtn:active{
+  transform: scale(0.8);
+}
+
+@media(max-width : 1000px){
+  .heroSection{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap:38px;
+  }
+
+  .textcontent{
+    line-height: 51px;
+  }
+
+  .textcontent p{
+    line-height: 32px;
+    margin-top: 22px;
+  }
+
+  .rightImage{
+    max-width: 475px;
+  }
+}
+
+
+@media(max-width : 600px){
+  .textcontent{
+      max-width: 400px;
+      line-height: 32px;
+      margin-right: 28px;
+  }
+  
+  .textcontent p{
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 14px;
+  }
+  
+  .textcontent h1{
+      margin-top: 8px;
+      font-size: 36px;
+      color: rgb(85, 85, 232);
+  }
+  
+  .textcontent h2{
+      font-size: 30px;
+  }
+
+  .btns{
+      margin-top: 32px;
+  }
+
+  .loginbtn{
+      padding: 8px 17px;
+      width: 100px;
+      font-size: 18px;
+  }
+  
+  .signupbtn{
+      font-size: 16px;
+      padding: 5px 17px;
+      width: 90px;
+  }
+
+  .logo{
+    width: 60px;
+  }
+
+  .navbar{
+    height: 47px;
+  }
+}

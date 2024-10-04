@@ -1,0 +1,239 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-inline: 18px;
+  overflow-x: scroll;
+}
+
+.container{
+  color: white;
+  background-color: rgb(85, 85, 232);
+  padding: 12px 24px;
+  border-radius: 10px;
+  width: 1150px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+}
+
+.container h1{
+  text-align: center;
+  margin-block: 18px;
+}
+
+.search{
+  display: flex;
+}
+
+.search input{
+  height: 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  flex-grow: 1;
+}
+
+.search input::placeholder{
+  opacity: 0.7;
+}
+
+.adminTB th, td{
+  padding: 12px;
+  text-align: left;
+}
+
+
+.adminTB{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.adminTB td{
+  font-size: 18px;
+}
+
+.adminTB th{
+  font-size: 24px;
+}
+
+.adminTB tr:nth-child(even) {
+  border: 1px solid white;
+  background-color: #7394ff;
+}
+
+.logo{
+  width: 70px;
+}
+
+.logo img{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  background-color: rgb(85, 85, 232);
+  z-index: 1;
+}
+
+.items{
+  display: flex;
+  gap: 18px;
+  font-size: 19px;
+  margin-right: 42px;
+  align-items: center;
+}
+
+.mobileNav{
+  display: none;
+}
+
+.ticketnumber{
+  position: relative;
+}
+
+.panddingnumber{
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  font-size: 12px;
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.panddingnumber2{
+  position: absolute;
+  left: 140px;
+  top: 0px;
+  font-size: 12px;
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.items p{
+  color : white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.items p:hover{
+  border-bottom: 2px solid white ;
+  padding-bottom: 1px;
+}
+
+.selectoption{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  min-width: 150px;
+  height: 40px;
+  top: 70px;
+  left: 40px;
+}
+
+option{
+  background-color: #1e4ff3;
+}
+
+.selectbox{
+  flex-grow: 1;
+  border: none;
+  appearance: none;
+  padding: 12px 16px;
+  color: white;
+  font-size: 18px;
+  background-color: #1e4ff3;
+  cursor: pointer;
+  outline: none;
+  border-radius: 4px;
+}
+
+.selectoption .selectarrow{
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  left: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow{
+  font-size: 28px;
+  color: white;
+}
+
+@media (max-width : 600px) {
+
+  .selectoption{
+    left: 20px;
+  }
+
+  .pcNav{
+    display: none;
+  } 
+
+  .navbar{
+    height: 47px;
+  }
+
+  .logo{
+    width: 60px;
+  }
+
+  .mobileNav{
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-right: 4px;
+  }
+
+  .main{
+    align-items: baseline;
+  }
+
+  .container{
+    margin-left: 150px;
+    margin-top: 150px;
+  }
+  
+  .adminTB td{
+    font-size: 14px;
+  }
+
+  .adminTB th{
+    font-size: 18px;
+  }
+
+  .items{
+    font-size: 16px;
+    margin-right: 14px;
+  }
+}

@@ -1,0 +1,578 @@
+/* home extend cssss */
+
+.logo{
+  width: 57px;
+}
+
+.logo img{
+  width: 100%;
+  margin-top: 6px;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  background-color: rgb(85, 85, 232);
+}
+
+.items{
+  display: flex;
+  gap: 18px;
+  font-size: 19px;
+  margin-right: 42px;
+  align-items: center;
+}
+
+a{
+  color : white;
+  text-decoration: none;
+}
+
+.items a:hover{
+  border-bottom: 2px solid white ;
+  padding-bottom: 1px;
+}
+
+/* user cssss */
+
+.userfields{
+  letter-spacing: 1px;
+}
+
+.shimmer2{
+  height: 20px;
+  width: 150px;
+  background: linear-gradient(-45deg, #eeeeeeb0 40%, #b0d2ee80 50%, #eeeeeeab 60%);
+  border-radius: 4px;
+  background-size: 300%;
+  background-position-x: 100%;
+  animation : shimmer 0.7s infinite linear;
+}
+
+.shimmer3{
+  height: 20px;
+  width: 110px;
+  background: linear-gradient(-45deg, #eeeeeeb0 40%, #b0d2ee80 50%, #eeeeeeab 60%);
+  border-radius: 4px;
+  background-size: 300%;
+  background-position-x: 100%;
+  animation : shimmer 0.7s infinite linear;
+}
+
+.shimmer4{
+  height: 20px;
+  width: 100px;
+  background: linear-gradient(-45deg, #eeeeeeb0 40%, #b0d2ee80 50%, #eeeeeeab 60%);
+  border-radius: 4px;
+  background-size: 300%;
+  background-position-x: 100%;
+  animation : shimmer 0.7s infinite linear;
+}
+
+.shimmer{
+  height: 20px;
+  width: 100px;
+  background: linear-gradient(-45deg, #eeeeeeb0 40%, #b0d2ee80 50%, #eeeeeeab 60%);
+  border-radius: 4px;
+  background-size: 300%;
+  background-position-x: 100%;
+  animation : shimmer 0.7s infinite linear;
+}
+
+@keyframes shimmer {
+  to{
+    background-position-x: 0%;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.status{
+  color: rgb(247, 63, 63);
+  font-weight: 700;
+}
+
+.votedstatus{
+  color: rgb(18, 216, 18);
+  font-weight: 700;
+}
+
+.userlogo{
+  display: none;
+  max-width: 35px;
+  cursor: pointer;
+  margin-right: 18px;
+}
+
+.userlogo img{
+  margin-top: 8px;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.bannerimg img{
+  width: 100%;
+  height: 270px;
+}
+
+.usernav{
+  position: relative;
+}
+
+.usercontainer{
+  display: flex;
+  min-height: calc(100vh - 45px);
+}
+
+.sidebar{
+  color: white;
+  background-color: rgb(99, 99, 245);
+  min-width: 280px;
+  min-height: calc(100vh - 70px);
+  padding-block: 12px;
+  padding-inline: 18px;
+  position: relative;
+  left: 0px;
+  transition: left 0.7s;  
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  /* border-bottom-right-radius: 10px; */
+}
+
+.parentclass .overlay{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  top : 45px
+}
+
+.toggleclass{
+  border-bottom-right-radius: 10px;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: rgb(99, 99, 245);
+  min-width: 280px;
+  min-height: calc(100vh - 70px);
+  padding-block: 12px;
+  padding-inline: 18px;
+  transition: left 0.7s; 
+  position: absolute;
+  left: 0px;
+}
+ 
+/* .showsidebar{
+  left: 0px;
+} */
+
+.sidelogo{
+  max-width: 150px;
+  margin-inline: auto;
+}
+
+.sidelogo img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.userdata{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.filed{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket{
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: rgb(99, 99, 245);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 80px;
+  left: 20px;
+  /* transform: translateX(-50%); */
+  transition: all 0.3s;
+}
+
+.ticket:hover{
+  background-color: rgb(99, 99, 245);
+  color: white;
+}
+
+.ticket:active{
+  transform: scale(0.7)
+}
+
+.logoutbtn{
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: red;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  width: calc(100% - 40px);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition: all 0.3s;
+}
+
+.logoutbtn:hover{
+  background-color: red;
+  color: white;
+}
+
+.logoutbtn:active{
+  transform: scale(0.7)
+}
+
+.userform{
+  margin-top: 18px;
+  margin-bottom: 28px;
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: rgb(99, 99, 245);
+  border-radius: 8px;
+  margin-inline: 28px;
+  overflow: hidden;
+  /* display: none; */
+}
+
+.showuserform{
+  display: block;
+}
+
+.showfirstform{
+  display: block;
+}
+
+.infotextbox{
+  padding-inline: 18px; 
+  max-width: 1200px;
+  margin-inline: auto;
+  background-color: rgba(240, 240, 247, 0.884);
+  padding-block: 12px;
+}
+
+/******************************************** Show / Hide TWO FORM ******************************/
+
+/* .formfieldbox{
+  display: none;
+} */
+/* 
+.showformfieldbox{
+  display: block;
+} */
+
+/* .residentalInfo{
+  display: none;
+} */
+
+/******************************************** Show / Hide TWO FORM ******************************/
+
+.formfields{
+  color: white;
+  font-size: 18px;
+  padding-inline: 18px;
+  display: flex;
+  gap: 18px;
+  padding-block: 12px;
+}
+
+.leftfl{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rightfl{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+}
+
+.twopairfield{
+  display: flex;
+  gap: 18px;
+}
+
+.infoText{
+  color: red;
+}
+
+.fl{
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.fl input{
+  height: 27px;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  padding-left: 8px;    
+  /* max-width: 400px; */
+}
+
+.agrement{
+  color: white;
+  display: flex;
+  gap: 16px;
+  margin-top: 28px;
+  padding-inline: 18px;
+}
+
+.agrement input{
+  width: 18px;
+}
+
+.agrementbtns{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 38px;
+  margin-bottom: 18px;
+  padding-inline: 18px;
+}
+
+.nextbtn{
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  color: rgb(99, 99, 245);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+}
+
+.nextbtn:hover{
+  background-color: rgb(99, 99, 245);
+  color: white;
+}
+
+.nextbtn:active{
+  transform: scale(0.7);
+}
+
+.greennext{
+  background-color: rgb(60, 141, 60);
+  color: white;
+}
+
+input[type='file']{
+  display: none;
+}
+
+.uploadfile{
+  background-color: white;
+  color: rgb(99, 99, 245);
+  border-radius: 8px;
+  padding: 4px 12px;
+  user-select: none;
+  cursor: pointer;  
+}
+
+.uploadfile:hover{
+  background-color: rgb(118, 118, 247);
+  color: white;
+
+}
+
+.uploadfile:active{
+  transform: scale(0.8);
+}
+
+.partybox{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.partyselction{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 80px;
+}
+
+.partyselction label:active{
+  transform: scale(0.8);
+}
+
+input[type="radio"]{
+  width: 90px;
+  border: 0px;
+}
+
+.partyselction img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.sumbitbtn{
+  border: 1px solid rgba(255, 255, 255, 0.616);
+  display: flex;
+  justify-content: center;
+  text-align: center; 
+  background-color: white;
+  color: rgb(99, 99, 245);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: 150px;
+  transition: all 0.3s;
+}
+
+.sumbitbtn:hover{
+  background-color: rgb(99, 99, 245);
+  color: white;
+}
+
+.sumbitbtn:active{
+  transform: scale(0.6);
+}
+
+.sumbitbtnbox{
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+  padding-bottom: 20px;
+}
+
+.context{
+  padding-inline: 18px;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.successBox{
+  background-color: rgb(99, 99, 245); 
+  padding: 28px 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  max-width: 450px;
+  min-height: 100px;
+}
+
+.successBox h3{
+  margin-top: 24px;
+}
+
+.successImg{
+  max-width: 550px;
+}
+
+.successImg img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.outerbox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  padding-inline: 18px;
+  min-height: calc(100vh - 60px);
+}
+
+.err{
+  font-size: 15px;
+  color: rgb(255 116 116);
+}
+
+@media(max-width : 930px){
+  .userform{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar{
+    position: absolute;
+    left: -350px;
+  }
+
+  .userlogo{
+    display: block;
+    user-select: none;
+  }
+
+  /* .sidebar{
+    position: relative;
+    left: 0px;
+  }*/
+  
+  /* .toggleclass{
+    position: absolute;
+    left: 0px;
+  }  */
+
+  .agrementbtns{
+    padding-bottom: 20px;
+  }
+}
+
+@media(max-width : 540px){
+  .fl{
+    margin-top: 12px;
+  }
+  .twopairfield{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .agrement input{
+    width: 40px;
+  }
+
+  .ticket{
+    bottom: 130px;
+  }
+
+  .logoutbtn{
+    bottom: 70px  ;
+  }
+}
